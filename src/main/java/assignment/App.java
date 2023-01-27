@@ -9,11 +9,12 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 
-class getInput implements Cloneable{
+class getinput implements Cloneable{
     public static final Logger LOGGER = Logger.getLogger("InfoLogging");
-    int x,y;
+    int x;
+    int y;
     Scanner sc = new Scanner(System.in);
-    getInput(){
+    getinput(){
         LOGGER.info("Enter coordinate x: ");
         x = sc.nextInt();
         LOGGER.info("Enter the coordinate y: ");
@@ -32,22 +33,23 @@ class App{
     public static final Logger LOGGER = Logger.getLogger("IndoLogging");
     public static void main(String[] args)throws CloneNotSupportedException { 
         
-            getInput obj1 = new getInput();
-            getInput objclone = (getInput)obj1.clone();
+            getinput obj1 = new getinput();
+            getinput objclone = (getinput)obj1.clone();
             Scanner sc = new Scanner(System.in);
             LOGGER.info("Enter new coordinate x1: ");
             int x1 = sc.nextInt();
             LOGGER.info("Enter new coordinate y1: ");
             int y1 = sc.nextInt();
             boolean result1 = obj1.check(x1,y1);
-            LOGGER.info(String.valueOf(result1));
-            LOGGER.info("Original Coordinate: "+obj1.x);
-            LOGGER.info("Original Coordinate: "+obj1.y);
-            int Clonedx = objclone.x=x1;
-            LOGGER.info("Clonned Coordinate x2: "+Clonedx);
-            int Clonedy = objclone.y=y1;
-            LOGGER.info("Clonned Coordinate: "+Clonedy);
-            
-            
+            String displayresult = String.valueOf(result1);
+            LOGGER.info(String.valueOf(displayresult));
+            String originalcoorx = String.valueOf(obj1.x);
+            LOGGER.info("Original Coordinate: "+originalcoorx);
+            String originalcoory = String.valueOf(obj1.y);
+            LOGGER.info("Original Coordinate: "+originalcoory);
+            String clonedx = String.valueOf(objclone.x=x1);
+            LOGGER.info("Clonned Coordinate x2: "+clonedx);
+            String clonedy = String.valueOf(objclone.x=x1);
+            LOGGER.info("Clonned Coordinate: "+clonedy);       
     }
 }
