@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 
 class getInput implements Cloneable{
-    public static final Logger LOGGER = Logger.getLogger("IndoLogging");
+    public static final Logger LOGGER = Logger.getLogger("InfoLogging");
     int x,y;
     Scanner sc = new Scanner(System.in);
     getInput(){
