@@ -43,10 +43,8 @@ class App{
             boolean result1 = obj1.check(x1,y1);
             String displayresult = String.valueOf(result1);
             LOGGER.info(displayresult);
-            String originalcoorx = String.valueOf(obj1.x);
-            LOGGER.info("Original Coordinate: "+originalcoorx);
-            String originalcoory = String.valueOf(obj1.y);
-            LOGGER.info("Original Coordinate: "+originalcoory);
+            LOGGER.info("Original Coordinate x: {}",obj1.x);
+            LOGGER.info("Original Coordinate y: {}",obj1.y);
             objclone.x=x1;
             LOGGER.info("Clonned Coordinate x2: {}",objclone.x);
             objclone.y=y1;
