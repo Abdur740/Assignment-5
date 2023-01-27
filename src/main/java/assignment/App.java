@@ -9,12 +9,12 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 
-class getinput implements Cloneable{
+class Getinput implements Cloneable{
     public static final Logger LOGGER = Logger.getLogger("InfoLogging");
     int x;
     int y;
     Scanner sc = new Scanner(System.in);
-    getinput(){
+    Getinput(){
         LOGGER.info("Enter coordinate x: ");
         x = sc.nextInt();
         LOGGER.info("Enter the coordinate y: ");
@@ -33,8 +33,8 @@ class App{
     public static final Logger LOGGER = Logger.getLogger("IndoLogging");
     public static void main(String[] args)throws CloneNotSupportedException { 
         
-            getinput obj1 = new getinput();
-            getinput objclone = (getinput)obj1.clone();
+            Getinput obj1 = new Getinput();
+            Getinput objclone = (Getinput)obj1.clone();
             Scanner sc = new Scanner(System.in);
             LOGGER.info("Enter new coordinate x1: ");
             int x1 = sc.nextInt();
