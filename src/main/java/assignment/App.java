@@ -47,8 +47,9 @@ class App{
             LOGGER.info("Original Coordinate: "+originalcoorx);
             String originalcoory = String.valueOf(obj1.y);
             LOGGER.info("Original Coordinate: "+originalcoory);
-            String clonedx = String.valueOf(objclone.x=x1);
-            LOGGER.info("Clonned Coordinate x2: "+clonedx);
-            LOGGER.info("Clonned Coordinate y2: {}",objclone.y=y1);        
+            objclone.x=x1;
+            LOGGER.info("Clonned Coordinate x2: {}",objclone.x);
+            objclone.y=y1;
+            LOGGER.info("Clonned Coordinate y2: {}",objclone.y);       
     }
 }
