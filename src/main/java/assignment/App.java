@@ -42,7 +42,7 @@ class App{
             int y1 = sc.nextInt();
             boolean result1 = obj1.check(x1,y1);
             String displayresult = String.valueOf(result1);
-            LOGGER.info(String.valueOf(displayresult));
+            LOGGER.info(displayresult);
             String originalcoorx = String.valueOf(obj1.x);
             LOGGER.info("Original Coordinate: "+originalcoorx);
             String originalcoory = String.valueOf(obj1.y);
