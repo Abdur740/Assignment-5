@@ -23,6 +23,7 @@ class Getinput implements Cloneable{
     boolean check(int x1, int y1){
         return x==x1 && y==y1;
     }
+    @Override
     public Object clone()throws CloneNotSupportedException{
         return super.clone();
     }
